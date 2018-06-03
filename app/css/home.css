@@ -1,0 +1,10 @@
+body {
+    background-image: url("https://www.healthline.com/hlcmsresource/images/topic_centers/Food-Nutrition/Coffee1-banner.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; 
+    text-align: center;
+    color: bisque;
+}
