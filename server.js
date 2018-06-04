@@ -16,11 +16,11 @@ var PORT = process.env.PORT || 3000;
 // })
 
 //handles data parsing
-// app.use(bodyParser.urlencoded({ extedned: true }));
-// app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 //goes to these files and executes them
-// require("app/routing/apiRoutes.js")(app);
+require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);
 
 //listens for page to load and begins program
