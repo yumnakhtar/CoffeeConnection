@@ -131,6 +131,7 @@
             $(".question").each(function () {
                 if ($(this).find("input:radio:checked").length) {
                     $(this).removeClass("error");
+                    //numbers being added as strings still..why?
                     var answer = parseInt($(this).find("input:radio:checked").val());
                     scores.push(answer);
 
@@ -156,9 +157,9 @@
 
         function getMatch(newFriend) {
             console.log(newFriend);
-            // $.post("/api/friends", newFriend, function(res){
+            $.post("/api/friends", newFriend, function(res){
             //  // show results to user
-            // });
+            });
         }
 
     </script>

@@ -13,3 +13,7 @@ body {
 .hide {
     display: none;
 }
+
+.begin {
+    margin-top: 50px;
+}

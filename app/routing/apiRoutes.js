@@ -9,9 +9,9 @@ module.exports = function(app) {
     });
     //check compatibility and add new friends
     app.post("/api/friends", function(req, res) {
-        var newRes = req.body;
-        queue.push(newRes);
-        res.json(NewRes);
+        var newFriend = req.body;
+        queue.push(newFriend);
+        res.json(newFriend);
     });
 
 }
