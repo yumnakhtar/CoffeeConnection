@@ -11,16 +11,6 @@
     <!-- .css files -->
     <!-- <link rel="stylesheet" type="text/css" href="styling/reset.css"> -->
     <link rel="stylesheet" type="text/css" href="styling/survey.css">
-    <!-- <style>
-        .error,
-        .error p {
-            color: red;
-        }
-
-        .error:before {
-            content: "* error "
-        }
-    </style> -->
 </header>
 
 <body>
@@ -116,7 +106,7 @@
     </div>
 
     <script>
-
+        //function when submit button is clicked
         $("#SubmitButton").on("click", function (e) {
             e.preventDefault();
             var newFriend = {
@@ -128,13 +118,13 @@
 
             var imageIsURL = validateURL(newFriend.img);
 
-            // validate value 
+            // validate all values for newFriend
             if (newFriend.scores.length === 10 && newFriend.name.length > 0 && newFriend.img.length > 0 && imageIsURL) {
                 getMatch(newFriend);
             }
 
         });
-
+        //validate all options for radio buttons
         function getValues(scores) {
             $(".question").each(function () {
                 if ($(this).find("input:radio:checked").length) {
