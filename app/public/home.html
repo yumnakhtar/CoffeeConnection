@@ -17,8 +17,9 @@
         <div id="begin">
             <h1>Coffee Connection</h1>
             <h4>Finding your bean buddy one brew at a time!</h4>
-            <button type="button" id="startButton" >Results</button>
+            <button type="button" id="startButton" >Start</button>
         </div>
+        
         <div id="questionnaire" class="hide">
             <div class="question">
                 <p>You are adventerous</p>
@@ -120,6 +121,7 @@
                     <input type="radio" name="rating10" value="5" >   5  
                 </form>
             </div>
+            <a href="/survey"><button type="button" id="SubmitButton" >Submit</button></a>
         </div>
         <script>
         $(document).on("click", "#startButton", function(){
@@ -128,6 +130,10 @@
             startBox.addClass("hide");
             questionBox.removeClass("hide");
         });
+
+        // $(document).on("click", "#SubmitButton", function() {
+
+        // });
         </script>
 
     </body>
