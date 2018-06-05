@@ -1,0 +1,8 @@
+.error,
+.error p {
+    color: red;
+}
+
+.error:before {
+    content: "* error "
+}
