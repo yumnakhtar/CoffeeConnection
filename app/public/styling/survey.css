@@ -1,3 +1,15 @@
+body {
+    background-image: url("http://eskipaper.com/images/coffee-beans-wallpaper-8.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; 
+    text-align: center;
+    background-color: #bb9a6e;
+    color: #713d21;
+}
+
 .error,
 .error p {
     color: red;
@@ -5,4 +17,17 @@
 
 .error:before {
     content: "* error "
+}
+
+#questionnaire {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#name, #url {
+    margin: 15px;
+}
+
+.question, #SubmitButton {
+    margin-top: 20px;
 }
